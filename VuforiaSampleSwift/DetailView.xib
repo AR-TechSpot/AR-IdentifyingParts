@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DetailView" customModule="VuforiaSampleSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DF-4a-YEc">
+                    <rect key="frame" x="187.5" y="0.0" width="0.0" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="wmU-kb-ZYC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mxh-Kv-pUg">
+                    <rect key="frame" x="345" y="0.0" width="30" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="ITa-MG-fY2"/>
+                        <constraint firstAttribute="height" constant="30" id="W3u-vv-Ky4"/>
+                    </constraints>
+                    <state key="normal" title="X">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="removeView" destination="iN0-l3-epB" eventType="touchUpInside" id="khK-OL-89w"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camshaft_valve_animation.gif" translatesAutoresizingMaskIntoConstraints="NO" id="aGF-pl-qA5">
+                    <rect key="frame" x="0.0" y="30" width="375" height="370"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1DF-4a-YEc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CmH-s2-lS3"/>
+                <constraint firstItem="aGF-pl-qA5" firstAttribute="top" secondItem="Mxh-Kv-pUg" secondAttribute="bottom" id="Hn9-FN-0Cn"/>
+                <constraint firstItem="Mxh-Kv-pUg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UqD-9D-Qh8"/>
+                <constraint firstItem="aGF-pl-qA5" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="hJk-Q6-3wz"/>
+                <constraint firstItem="aGF-pl-qA5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="orZ-wp-cwj"/>
+                <constraint firstItem="aGF-pl-qA5" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="pAN-L0-dKT"/>
+                <constraint firstItem="1DF-4a-YEc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rDJ-CW-LTA"/>
+                <constraint firstItem="Mxh-Kv-pUg" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="rdD-dj-yw9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="closeButton" destination="Mxh-Kv-pUg" id="9XW-1l-kjV"/>
+                <outlet property="gifImage" destination="aGF-pl-qA5" id="OLt-Fy-zeQ"/>
+                <outlet property="headingLabel" destination="1DF-4a-YEc" id="0LJ-hC-p0a"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="camshaft_valve_animation.gif" width="320" height="240"/>
+    </resources>
+</document>

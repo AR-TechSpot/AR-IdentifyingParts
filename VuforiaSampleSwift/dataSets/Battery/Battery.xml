@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="battery_5" size="0.200000 0.236834" />
+    <ImageTarget name="battery_4" size="0.200000 0.203676" />
+    <ImageTarget name="battery_2" size="0.200000 0.230297" />
+    <ImageTarget name="battery_1" size="0.150000 0.186095" />
+  </Tracking>
+</QCARConfig>
